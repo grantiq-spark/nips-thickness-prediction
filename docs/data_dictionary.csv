@@ -1,0 +1,16 @@
+column,unit,type,description,public_release_note
+production_date,YYYY-MM-DD,date,Production date or anonymized chronological index,May be replaced by sequential month/quarter index
+lot_id,-,categorical,Anonymized production lot identifier,Use hashed or synthetic IDs
+product_family,-,categorical,Product family label,Define DAF and sub-variants explicitly
+viscosity_cp,cP,numeric,Dope solution viscosity measured before casting,Can be normalized if confidential
+casting_speed_m_min,m/min,numeric,Web/casting speed during coating,Can be normalized if confidential
+doctor_blade_gap_um,um,numeric,Nominal casting gap,Report actual or normalized
+dope_flow_rate_ml_min,mL/min,numeric,Dope delivery flow rate,Clarify pump type
+solution_concentration_pct,%,numeric,Solution concentration,Can be binned if proprietary
+solid_content_pct,%,numeric,Total solid content,Can be binned if proprietary
+nips_bath1_temp_c,degC,numeric,NIPS bath 1 temperature,Report missingness
+nips_bath2_temp_c,degC,numeric,NIPS bath 2 temperature,Report missingness
+dry1_temp_c,degC,numeric,Drying zone 1 temperature,Report missingness
+dry2_temp_c,degC,numeric,Drying zone 2 temperature,Report missingness
+dry3_temp_c,degC,numeric,Drying zone 3 temperature,Report missingness
+dry_thickness_um,um,numeric,Dry membrane thickness target; mean of three cross-web positions,Also report cross-web standard deviation if available
